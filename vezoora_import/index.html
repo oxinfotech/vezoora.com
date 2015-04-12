@@ -1,0 +1,126 @@
+<html>
+	<head>
+		<title>Product / Category / Customer Import!</title>
+	</head>
+	<body>
+		<h1>Product / Category / Customer Import!</h1>
+		<div>
+		<p>Kindly follow the below steps to import Product through API's</p>
+		<ol>
+		<li>Create SOAP username / password from magento Backend</li>
+		<li>Update above details in the settings.php file</li>
+		<li>Update attribute details in the settings.php file</li>
+		<li>Get the attribute details and options from following link <a href="attributeList.php" target="_blank">Attribute List</a></li>
+		<li>Get the category details from following link <a href="categoryList.php" target="_blank">Category List</a></li>
+		<li>Fill the CSV by appropriate values For Color is Blue means specify 6 in the CSV</li>
+		<li>Follow the Date Format like yyyy-mm-dd Eg., 2014-06-31</li>
+		<li>Please don't change the any attribute code of Product, Category and Customer</li>
+		</ol>
+		<h3>Product Import</h3>
+		<ul>
+			<li>Place the CSV file in the following location (source/csv/catalog/) with example file format name is Eg., "product-2014-05-23.csv"</li>
+			<li>Upload the respective product image in the following location Eg., "source/csv/images/2014-05-23" and specify the product name with extension in the CSV (Eg., sample_image.png)</li>
+			<li>Install this extension For importing configurable product <a href="source/extension/magento-improve-api-master.zip">Extension</a></li>
+			<li>Run this script for Product upload <a href="productImport.php">Product Import</a></li>
+			<li>Already sample file is available in this location, (source/csv/catalog/). Kindly rename the file and work.</li>
+			<li><h4>Compulsory Fields Description</h4>
+			<ul><li>product_type -  Type of the Product (simple,configurable,bundle,virtual,grouped,downloadable)</li>
+				<li>name - Name of the Product</li>
+				<li>description - Description of the Product</li>
+				<li>short_description - Short Description of the Product</li>
+				<li>sku - Sku of the product (unique value)</li>
+				<li>weight - Weight of the Product</li>
+				<li>status - Status of the Product (Check Attribute List)</li>
+				<li>visibility - Visibility of the Product (Check Attribute List)</li>
+				<li>price - Price of the Product</li>
+				<li>tax_class_id - Tax Class of the Product (Check Attribute List)</li>
+				<li>manage_stock - Manage Stock of the Product (0 - No, 1 - Yes)</li>
+				<li>qty - Quantity of the Product</li>
+				<li>is_in_stock - Specify Is in Stock(0) or Out Of Stock(0)</li>
+				<li>category_ids - List of Category Id of the Product // with comma separated (Check Category List)</li>
+				<li>grouped_product_skus - List of Sku which come under main Product // Fill if the product type is grouped</li>
+				<li>associated_skus' - List of Sku which come under Main Product, // Fill if the product type is configurable, simple sku with comma separated</li>
+				<li>configurable_attributes - Fill if the product type is configurable, atribute id with comma separated.</li>
+				<li>option_title1 - Title of the Bundle product // Fill if the product type is bundle</li>
+				<li>option_type1 - // select,radio,checkbox, multi - Specify appropriate selections</li>
+				<li>option_skus1 - List of Skus which come under first title with comma separated</li>
+				<li>option_status1 - // give add for new options or delete for old options</li>
+				<li>option_title2 - Similar to Option1</li>
+				<li>option_type2</li>
+				<li>option_skus2</li>
+				<li>option_status2</li>
+				<li>option_title3 - Similar to Option1</li>
+				<li>option_type3</li>
+				<li>option_skus3</li>
+				<li>option_status3</li>
+			</ul>
+			</li>
+			<li><h4>Optional Fields Description</h4>
+			<ul><li>news_from_date - New from Date (Format : yyyy-mm-dd Eg., 2014-06-31)</li>
+				<li>news_to_date - New to Date</li>
+				<li>url_key - URL Key of the Product</li>
+				<li>country_of_manufacture - Country of Manufacture (Check Attribute List)</li>
+				<li>manufacturer - Manufacture of the Product</li>
+				<li>color - </li>
+				<li>special_price</li>
+				<li>special_from_date</li>
+				<li>special_to_date</li>
+				<li>meta_title</li>
+				<li>meta_keyword</li>
+				<li>meta_description</li>
+				<li>image1-5 - Image of the Product</li>
+			</ul>
+			</li>
+		</ul>
+		<h3>Category Import</h3>
+		<ul>
+			<li>Place the CSV file in the following location (source/csv/catalog/) with example file format name is Eg., "category-2014-05-23.csv"</li>
+			<li>Run this script for Category upload <a href="categoryImport.php">Category Import</a></li>
+			<li>Already sample file is available in this location, (source/csv/catalog/). Kindly rename the file and work.</li>
+			<li><h4>Compulsory Fields Description</h4>
+			<ul><li>parent_category_id -  Parent Category of the Category</li>
+				<li>name - Name of the Categoty</li>
+				<li>is_active - Active status of the Category</li>
+			</ul>
+			</li>
+			<li><h4>Optional Fields Description</h4>
+			<ul><li>custom_design -  Specify the Theme settings name</li>
+				<li>custom_apply_to_products //1 or 0</li>
+				<li>custom_design_from - Starting Date of the Custom Design Apply</li>
+				<li>custom_design_to - Ending date of the Custom Design Apply</li>
+				<li>custom_layout_update - Custom XML Layout</li>
+				<li>description - Description of the Category</li>
+				<li>is_anchor - Specify the is anchor is Available //1 or 0</li>
+				<li>meta_description - Meta Description of the Category</li>
+				<li>meta_keywords - Meta Keywords of the Category</li>
+				<li>meta_title - Meta Title of the Category</li>
+				<li>page_layout - Specify the Layout design of the Category Page Check with Attribute list // one column / two column</li>
+				<li>url_key - URL key of the Category</li>
+				<li>include_in_menu - Specify  1 or 0</li>
+			</ul>
+			</li>
+		</ul>
+		<h3>Customer Import</h3>
+		<ul>
+			<li>Place the CSV file in the following location (source/csv/customer/) and example file format name is Eg., "customer-2014-05-23.csv"</li>
+			<li>Run this script for Category upload <a href="customerImport.php">Customer Import</a></li>
+			<li>Already sample file is available in this location, (source/csv/customer/). Kindly rename the file and work.</li>
+			<li><h4>Compulsory Fields Description</h4>
+			<ul><li>email -  Customer Email</li>
+				<li>firstname - First Name of the Customer</li>
+				<li>lastname - Last Name of the Customer</li>
+				<li>password - Password of the Customer</li>
+			</ul>
+			</li>
+			<li><h4>Optional Fields Description</h4>
+			<ul><li>middlename - Middle Name of the Customer</li>
+				<li>prefix - Prefix Name of the Customer</li>
+				<li>suffix - Suffix Name of the Customer</li>
+				<li>dob - Date of Birth of the Customer</li>
+				<li>taxvat - Customer tax/VAT number</li>
+				<li>gender - Customer gender: 1 - Male, 2 - Female</li>
+			</ul></li>
+		</ul>
+		</div>
+	</body>
+</html>

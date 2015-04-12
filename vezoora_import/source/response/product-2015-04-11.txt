@@ -1,0 +1,5 @@
+Update Product Skus : 
+ : Product Updated : simple-sku1
+ : Product Updated : simple-sku2
+ : Product Updated : simple-sku3
+ : Product Updated : config-sku1

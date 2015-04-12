@@ -1,0 +1,8 @@
+Update Product Skus : 
+Couldn't find the image: /var/www/html/magento1800/import/source/images/2014-10-14/Chrysanthemum.jpg
+Couldn't find the image: /var/www/html/magento1800/import/source/images/2014-10-14/Koala.jpg
+ :  : Product Created simple-sku1
+Couldn't find the image: /var/www/html/magento1800/import/source/images/2014-10-14/Desert.jpg
+ : Custom Option created.  : Product Created simple-sku2
+Couldn't find the image: /var/www/html/magento1800/import/source/images/2014-10-14/Hydrangeas.jpg
+ : Custom Option created.  : Product Created simple-sku3

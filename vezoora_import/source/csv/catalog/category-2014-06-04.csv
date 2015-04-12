@@ -1,0 +1,4 @@
+parent_category_id,name,is_active,custom_design,custom_apply_to_products,custom_design_from,custom_design_to,custom_layout_update,description,is_anchor,meta_description,meta_keywords,meta_title,page_layout,url_key,include_in_menu
+2,sample category 1,1,default,1,,,,sample desc1,1,sample meta desc1,sample meta key1,sample meta title1,one_column,,1
+2,sample category 2,1,default,0,,,,sample desc2,0,sample meta desc2,sample meta key2,sample meta title2,two_columns_left,,0
+2,sample category 3,1,base,1,,,,sample desc3,1,sample meta desc3,sample meta key3,sample meta title3,two_columns_right,,1

@@ -1,0 +1,4 @@
+Update Catelog Category Names :
+Category Created sample category 1
+Category Created sample category 2
+Category Created sample category 3

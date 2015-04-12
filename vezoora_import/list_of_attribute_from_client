@@ -1,0 +1,21 @@
+name - Name of the Product - yes
+sku - SKU or Unique Number - yes
+status - Status - Enabled or Disabled - yes
+visibility - to show in catalog or search - yes
+short_description - Description of the product - yes
+price - price of the product - yes
+meta_title - meta title of the product - yes
+meta_description - meta description of the product - yes
+meta_keywords - meta keywords of the product - yes
+friendly_url - User friendly of the product - yes (url_key)
+main_category - Category of the Product - yes 
+sub_category - Sub Category of the Product - yes
+weight - weight of the product - yes
+quantity - Qty of the product - yes 
+image - image of the product - yes 
+setting - Setting of the Product
+style - Style of the Product
+metal_type - Metal / type of the Product
+Description
+Product Type - This is used to highlight a product on home page as new product. values are New / Old. you use magento feature.
+Weight - it is a range. - yes
